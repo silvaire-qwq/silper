@@ -169,7 +169,7 @@ div#home-page {
 div#home-page {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(auto-fill, 1fr);
   grid-gap: 0px 7px;
 }
 
@@ -201,7 +201,7 @@ a.VPButton.medium.alt:hover {
 a.VPLink.no-icon.VPFeature {
   article.box {
     border: var(--vp-c-divider) 1px solid;
-    border-radius: 0.7em;
+    border-radius: 0.8em;
     transition: all 0.4s ease 0s;
     box-shadow: 10px 10px 10px var(--vp-c-bg-elv);
   }
@@ -237,7 +237,7 @@ a {
 article.VPTeamMembersItem.small {
   div.profile {
   border: var(--vp-c-divider) 1px solid;
-  border-radius: 0.7em;
+  border-radius: 0.8em;
   transition: all 0.4s ease 0s;
   box-shadow: 10px 10px 10px var(--vp-c-bg-elv);
   }
@@ -245,4 +245,33 @@ article.VPTeamMembersItem.small {
   background-color: var(--vp-c-bg-elv);
   transition: all 0.4s;
   }
+}
+
+:root {
+  --vp-custom-block-tip-bg: var(--vp-c-green-soft);
+}
+
+.custom-block.tip {
+  border-radius: 0.8em;
+  border-color: var(--vp-c-green-2);
+}
+
+.custom-block.warning {
+  border-radius: 0.8em;
+  border-color: var(--vp-c-yellow-2);
+}
+
+.custom-block.danger {
+  border-radius: 0.8em;
+  border-color: var(--vp-c-red-2);
+}
+
+.custom-block.important {
+  border-radius: 0.8em;
+  border-color: var(--vp-c-purple-1);
+}
+
+.custom-block.note {
+  border-radius: 0.8em;
+  border-color: var(--vp-c-indigo-1);
 }
